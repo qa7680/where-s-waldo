@@ -1,0 +1,46 @@
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gameImage:hover{
+    cursor: pointer;
+}
+.topGame{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.gameImage{
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+.imageContainer{
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 1110px){
+
+    body{
+        min-width: 100%;
+        min-height: 100vh;
+    }
+    .gameContainer{
+        display: block;
+    }
+    .topGame{
+        flex-direction: column;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+    .gameImage{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (min-width: 1111px) {
+    .gameImage{
+        width: 100%;;
+    }
+};

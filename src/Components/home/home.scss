@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Akshar;
+    src: url('../../Fonts/Akshar-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Texas;
+    src: url('../../Fonts/TEXAT\ BOLD\ PERSONAL\ USE___.otf');
+}
+
+.homeContainer{
+    padding: 6rem 18rem;
+    font-family: Akshar;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    justify-self: center;
+    align-self: center;
+    min-height: 100%;
+}
+
+.currentLeaderboard{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.5rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    box-shadow: 2px 1px 15px 1px rgba(0,0,0,0.38);
+    border: 4px solid white;
+    padding: 2rem;
+    padding-top: 1rem;
+    background-color: black;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.currentLeaderboard h1{
+    font-family: Texas;
+    margin: 2rem;
+}
+.userScore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid white;
+    padding: 1rem;
+}
+.userScoreContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.culprits{
+    margin-right: 2.5rem;
+    grid-column: 1/2;
+    box-shadow: 2px 1px 15px 1px rgba(0,0,0,0.38);
+    border: 4px solid white;
+    grid-row: 1/2;
+    padding: 2rem;
+    padding-top: 1rem;
+    background-color: #fba92c;
+}
+.culprits h1{
+    font-family: Texas;
+    margin: 2rem;
+}
+.clupritsContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+.waldo, .detective, .cowboy{
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid rgb(146, 47, 47);
+    border-radius: 5px;
+    border-style: dashed;
+}
+.waldo img, .detective img, .cowboy img{
+    margin-right: 2rem;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 1px solid black;
+}
+.rightSideCulprit{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.homeText{
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+.playBtn,.leadBtn{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;    
+    font-family: Texas;
+}
+.playBtn:hover, .leadBtn:hover{
+    background-color: rgb(166, 45, 45);
+}
+.playLink, .leadLink{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.rightSideCulprit{
+    p{
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1100px){
+    body{
+        min-width: 100vw;
+    }
+    .homeContainer{
+        display: block;
+        padding: 2rem 4rem;
+        div{
+            margin: 2rem 0;
+        }
+    }
+    .currentLeaderboard{
+        h1{
+            text-align: center;
+        }
+    }
+    .clupritsContainer{
+        gap:0;
+        display: block;
+    }
+};
+
+@media (min-width: 1111px) and (max-width: 1919px){
+    .homeContainer{
+        padding: 4rem 7rem;
+    }
+    .currentLeaderboard{
+        h1{
+            text-align: center;
+        }
+    }
+}

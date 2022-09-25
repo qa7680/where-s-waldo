@@ -1,0 +1,14 @@
+.popupBox{
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding: 0 1rem 0rem 1rem;
+    border-radius: 8px;
+    font-family: Akshar;
+  }
+  .popupBox p{
+    cursor: pointer;
+  }
+  .popupBox p:hover{
+    opacity: 0.5;
+  }

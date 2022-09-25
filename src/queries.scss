@@ -1,0 +1,27 @@
+@media (min-width: 320px) and (max-width: 1100px) {
+  html{
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+  }
+  #root{
+    margin: 0;
+    padding: 0;
+  }
+    body{
+      min-height: 100vh;
+      width: fit-content;
+      padding: 0;
+      margin: 0;
+    }
+    .navSection{
+      display: block;
+    }
+    .navbarLinks{
+      display: block;
+      font-size: 5rem;
+    }
+    .homeContainer{
+      display: block;
+    }
+  }

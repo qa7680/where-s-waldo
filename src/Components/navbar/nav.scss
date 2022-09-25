@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Koulen;
+    src: url('../../Fonts/Koulen-Regular.ttf');
+}  
+.navSection{
+    display: flex;
+    font-family: Koulen;
+    align-items: center;
+    justify-content: space-between;
+    background: #6E260E;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: -2px 4px 7px -5px rgba(0,0,0,0.4);
+};
+.navbarLinks{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin:0;
+    font-weight: bold;
+    gap: 2.5rem;
+}
+.navLink{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+.navLink:hover{
+    opacity: 0.7;
+}
+.waldoTitle{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+@media (min-width: 320px) and (max-width: 1100px) {
+    body{
+        padding:0;
+        margin: 0;
+        min-height: 100%;
+    }
+    .navSection{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      height: 100%;
+      
+    }
+    .navbarLinks{
+        justify-content: center;   
+        font-size: 0rem;
+        padding-left: 0rem;
+    }
+    .waldoTitle{
+        text-align: center;
+    }
+   
+  }
