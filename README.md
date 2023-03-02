@@ -1,4 +1,4 @@
-## https://waldo-project-321c7.web.app/
+### Photo tagging game created using React.js as a front end client and Firebase as its back-end.
 
 ## Getting Started with Create React App
 
